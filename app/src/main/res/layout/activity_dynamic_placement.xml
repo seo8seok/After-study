@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context="com.example.choisc.placefragments.activities.DynamicPlacementActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--onClick 속성을 주어 Java코드와 연결-->
+        <Button
+            android:id="@+id/dynamic_first_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:onClick="onClick"
+            android:text="1st Fragment"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/dynamic_second_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:onClick="onClick"
+            android:text="2nd Fragment"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/dynamic_third_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:onClick="onClick"
+            android:text="3rd Fragment"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <!--첫번째 프래그먼트가 들어갈 영역-->
+    <FrameLayout
+        android:id="@+id/dynamic_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="4dp" />
+
+    <!--두번째 프래그먼트가 들어갈 영역-->
+    <FrameLayout
+        android:id="@+id/dynamic_mid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="4dp" />
+
+    <!--세번째 프래그먼트가 들어갈 영역-->
+    <FrameLayout
+        android:id="@+id/dynamic_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="4dp" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.choisc.placefragments.fragments.dynamic.TopFragment">
+
+    <TextView
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+        android:background="#cf5555"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="첫번째 프래그먼트 \n배치 완료!" />
+
+</FrameLayout>
